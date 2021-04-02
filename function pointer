@@ -1,0 +1,16 @@
+#include<stdio.h>
+int Add(int a, int b){
+    return a+b;
+    }
+int main(){
+    int c;
+    //ptr to fn that should take
+    //(int,int) as argument/parameter and return integer
+    int (*p)(int,int);
+    p=&Add;
+    c=(*p)(9,10);
+    printf("%d",c);
+    
+    
+    
+}
